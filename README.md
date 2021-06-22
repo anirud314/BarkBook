@@ -17,13 +17,19 @@ link here
 ## Acceptance Criteria MVP
 GIVEN: A Blog social media site
 
-WHEN: I go to the application homepage THEN: I am presented with a blog type page
+WHEN: I go to the application homepage
+THEN: I am presented with a blog type page 
 
-WHEN: I have I do not yet have an account THEN: I will be prompted to create one
+WHEN: I have I do not yet have an account
+THEN: I will be prompted to create one
 
-WHEN: Once I have access to the blog feed THEN: I can type and comment and upload an image
+WHEN: Once I have access to the blog feed
+THEN: I can type and comment and upload an image
 
-WHEN: I have access to the blog feed. THEN: I can read other peoples post and comment
+WHEN: I have access to the blog feed.
+THEN: I can read other peoples post and comment
 
-WHEN: I dont have an account, THEN: I can see the blog but I cannot comment until i make an account
+
+WHEN: I dont have an account, 
+THEN: I can see the blog but I cannot comment until i make an account
 
