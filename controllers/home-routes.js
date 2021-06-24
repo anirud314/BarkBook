@@ -5,7 +5,7 @@ const sequelize = require('../config/connection');
 router.get('/', (req, res) => {
   console.log('Breath... Encourage your teammates... Breath... Repeat...');
   
-  res.render('homepage', {});
+  res.render('homepage', {layout: 'main'});
 });
 
 
