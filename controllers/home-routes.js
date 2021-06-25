@@ -8,5 +8,9 @@ router.get('/', (req, res) => {
   res.render('homepage', {layout: 'main'});
 });
 
+router.get('/login', (req, res) => {
+  res.render('login', {layout: 'main'});
+})
+
 
 module.exports = router;
