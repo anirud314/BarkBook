@@ -1,1 +1,10 @@
-<h1>Hello World</h1>
+
+
+
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>

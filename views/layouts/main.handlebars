@@ -4,34 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Be nice</title>
-   <!-- Compiled and minified CSS -->
-
-    <link href="stylesheets/style.css" rel="stylesheet">
+  <title>The Bark Book</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-<body class = "container">
-<header>
+<body>
+  <div class="wrapper">
+    <header>
+    
+    </header>
+
+
+    <main>
+
+
+<div class="pure-g">
+ 
+    <div class="pure-u-5-5">
+<div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="341" height="53" viewBox="0 0 341 53"><defs><style>.a{fill:#fd74aa;}.a,.b{font-size:50px;font-family:Rockwell-Regular, Rockwell;}.b{fill:#5aa681;}</style></defs><g transform="translate(-395 -224)"><text class="a" transform="translate(395 261)"><tspan x="0" y="0" xml:space="preserve">The         Book</tspan></text><text class="b" transform="translate(493 261)"><tspan x="0" y="0">Bark</tspan></text></g></svg></div>
  
 
-</header>
+
+</div>
 
 
+<div class="pure-g">
 
+<div class="pure-u-5-5">
+    <img src="images/image-dog1.png" alt="Dog" width="200">
 
+</div>
 
+</div>
 
+ 
 
-    {{!-- <main>
-
-     
+<div class="pure-g">
+   
+    <div class="pure-u-5-5">  
+      
       {{{ body }}}
-    </main> --}}
-  </div>
+      
+      </div>
 
+</div>
+
+
+
+      
+     
+    </main>
+    
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
-
-
-
 
 </html>
