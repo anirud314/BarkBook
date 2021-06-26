@@ -24,6 +24,7 @@ router.get('/:id',  (req, res) => {
   });
 });
 
+//Create a user
 router.post('/', (req,res) => {
   //error checking
   const errors = [];
@@ -62,6 +63,7 @@ router.post('/', (req,res) => {
   });
 });
 
+//login
 router.post('/login', (req, res) => {
   //error checking
   const errors = [];

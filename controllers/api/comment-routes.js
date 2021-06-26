@@ -13,4 +13,11 @@ router.get("/:post", (req, res) => {
     });
 });
 
+
+router.get('/comments', (req, res) => {
+  res.render('comments', {layout: 'main'});
+})
+
+
+
 module.exports = router;
