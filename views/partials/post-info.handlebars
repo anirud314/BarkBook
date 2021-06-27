@@ -1,11 +1,28 @@
-<article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
-    <span>({{format_url post_url}})</span>
-  </div>
+<div class="post">
+  <div class="info">{{user.username}}</div>
+  <img src="https://via.placeholder.com/500x300.png" alt="This is the placeholder for the post image"
+    title="This is the placeholder for the post image">
+  <div class="info">{{format_date created_at}}</div>
   <div class="meta">
-    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    <div class="row">
+      <div class="col-1">
+        <img class="avatar" src="https://via.placeholder.com/500x300.png" alt="This is the placeholder for the post image"
+          title="This is the placeholder for the post image">
+      </div>
+      <div class="col-8">
+        {{body}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 offset-1">
+        {{#if vote_count}}
+        <i class="fas fa-heart"></i>
+        {{vote_count}}
+        {{/if}}
+      </div>
+    </div>
   </div>
-</article>
+</div>  
+<div class="comment-wrapper mt-1">
+  {{> comments comments}}
+</div>

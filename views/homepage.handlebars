@@ -1,28 +1,19 @@
-
-
-
-
-
-
-
-
-
-
-
-
-<ol class="post-list">
-
-
+<ul class="list-group list-group-flush">
   {{#each posts as |post|}}
-  <li>
+  <li class="list-group-item">
     {{> post-info post }}
   </li>
   {{/each}}
-</ol>
+</ul>
 
-  <button class="button-secondary pure-button">Comment</button>
+<div class="new-comment">
+  <div class="new-comment-user">[logged in user]<div>
+  <textarea class="new-comment-textarea"></textarea>
+</div>
 
-    <button class="button-secondary pure-button">Post</button>
+<button class="button-secondary pure-button">Comment</button>
+
+<button class="button-secondary pure-button">Post</button>
 
 
 
