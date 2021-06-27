@@ -11,16 +11,20 @@
     color: #333;
     font-size: 18px;
     background-color: #1695B1;
+    
   }
 
   .main-col {
     background-color: #fff;
+    
+    
   }
 
   .avatar {
     width: 50px !important;
     height: 50px !important;
     border-radius: 35px;
+    margin-right: 20px;
   }
 
   /*navigation */
@@ -98,68 +102,26 @@
 
   /*end homepage */
 
-  .pure-g{
-      background-color: #FFFFFF;
-      height: 100%;
-      width: 100%;
-      text-align:center ;
-  }
 
-
- #aligned-name {
-    border-radius: 5px;
-    border-color: #00CC18;
-    border-width: 2px;
-    border-style: solid;
-    width:30%;
-  }
-
-
-  #aligned-password {
-    border-radius: 5px;
-    border-color: #00CC18;
-    border-width: 2px;
-    border-style: solid;
-    width:30%;
-  }
-
-  #aligned-email {
-    border-radius: 5px;
-    border-color: #00CC18;
-    border-width: 2px;
-    border-style: solid;
-    width:30%;
-  }
 
   .logo{
       padding-top: 20px;
+      margin:20px;
+      text-align: center;
+
   }
 
-  a {
-    text-decoration: none;
-    color: #225ca3;
-    font-weight: bold;
-    transition: color .1s;
+  .dog{
+    padding-top: 20px;
+    margin:20px;
+    text-align: center;
   }
+
+ 
   
   
-  
-  .button-secondary {
-    background: rgb(66, 184, 221);
-    /* this is a light blue */
 
 
-    background-color: #1695B1;
-    border: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: white;
-    font-weight: bold;
-    transition: background-color .1s;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
  
   .blue{
     background-color:#1695B1;
@@ -325,20 +287,7 @@
     font-size: 110%;
   }
 
-
-  .button-secondary{
-    background-color: #1695B1;
-    color: #FFFFFF;
-    font-weight: 500;
-    margin:30px;
-    padding-left:30px;
-    padding-right:30px;
-    
-    
-  }
-
-
-
+ 
 
 
 /*----------testing   */
