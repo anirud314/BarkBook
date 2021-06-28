@@ -19,10 +19,10 @@ router.post('/', (req,res) => {
   User.create({
     username: req.body.username,
     password: req.body.password,
-    email: req.body.email
+    email: req.body.email,
   }).then(dbUserData => {
     req.session.user_id = dbUserData.id;
-    req.session.username = dbUserData.username;
+    req.session.username = dbUserData.username || dbUserData.email;
     req.session.loggedIn = true;
     res.status(200).jsonp('new user created')
   })
