@@ -1,7 +1,7 @@
 const { destroy } = require("../models/User");
 
 async function logout() {
-    const response = await fetch('whatever it should be', {
+    const response = await fetch('/api/users/logout', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' }
     });

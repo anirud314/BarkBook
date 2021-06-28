@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Post, Comment, Vote } = require('../../models');
+const err = [];
 
 // get all users
 router.get('/', (req, res) => {
@@ -23,47 +24,23 @@ router.post('/', (req,res) => {
     req.session.user_id = dbUserData.id;
     req.session.username = dbUserData.username;
     req.session.loggedIn = true;
+    res.status(200).jsonp('new user created')
   })
 })
 
-router.get('/:id', (req, res) => {
-  User.findOne({
-    attributes: { exclude: ['password'] },
-    where: {
-      id: req.params.id
-    },
-    include: [
-      {
-        model: Post,
-        attributes: ['id', 'title', 'post_url', 'created_at']
-      },
-      {
-        model: Comment,
-        attributes: ['id', 'comment_text', 'created_at'],
-        include: {
-          model: Post,
-          attributes: ['title']
-        }
-      },
-      {
-        model: Post,
-        attributes: ['title'],
-        through: Vote,
-        as: 'voted_posts'
-      }
-    ]
-  })
-    .then(dbUserData => {
-      if (!dbUserData) {
-        res.status(404).json({ message: 'No user found with this id' });
-        return;
-      }
-      res.json(dbUserData);
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-
+router.post('/user/login', (req,res) => {
+  if (!req.body.username) {
+    err.push('Username not found')
+    return;
+  } else if (!req.body.password) {
+    err.push('Password not found')
+    return;
+  } else if (username === null) {
+    err.push('input a username')
+    return;
+  } else if (password === null) {
+    err.push('input a password')
+  }
+  
+})
 module.exports = router;
