@@ -33,3 +33,15 @@ THEN: I can read other peoples post and comment
 WHEN: I dont have an account, 
 THEN: I can see the blog but I cannot comment until i make an account
 
+# Screenshots of the project working
+
+# Notes on the project
+
+## Trica
+
+## Andrea
+
+## Nitin
+
+## Aniruddha
+So I am taking on the api routes and the routing. Based on what I have seen so far this is very similar to the week 14 challenge's routing section, I just have to make sure to change it so that it fits the posts and different things we are trying to route. In order to prepare for this task I planned to use the material I learned from the class project that is due for MVC and use that knowledge for the project as the routing and api routing are similar.
