@@ -1,0 +1,33 @@
+
+{{!-- this is post info --}}
+
+
+<div class="post">
+  
+  <div class="info">{{user.username}}</div>
+  <img src="/images/image-post-sample.png" alt="Jeff's Selfie"
+    title="This is Jeff's puppy selfie">
+  <div class="info">{{format_date created_at}}</div> 
+  <div class="meta">
+    <div class="row">
+      <div class="col-2">
+        <img class="avatar" src="/images/avatar1.png" alt="This is the placeholder for the avatar post"
+          title="Avatar">
+      </div>
+      <div class="col-6">
+        {{body}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 ">
+        {{#if vote_count}}
+        <i class="fas fa-heart"></i>
+        {{vote_count}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>  
+<div class="comment-wrapper mt-1">
+  {{> comments comments}}
+</div>

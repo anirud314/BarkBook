@@ -1,1 +1,324 @@
-/* RESET? css framework? */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* end of RESET? css framework? */
+
+
+
+* {
+    box-sizing: border-box;   
+  }
+  
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    font-size: 18px;
+    background-color: #1695B1;
+      
+  }
+
+  .main-col {
+    background-color: #fff;
+    align-content: center;
+  }
+
+  .avatar {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 35px;
+    margin-right: 20px;
+  }
+
+
+
+  header{
+    height:64px;
+    background-color: #05586A;
+  }
+  
+  /*navigation */
+  .bark-title {
+    color: #fff;
+  }
+
+  .user-button {
+    background-color:#FD74AA;
+    color: #fff;
+    margin:10px;
+  }
+
+  .user-button:hover {
+    color: #fff !important;
+  }
+
+  /*end navigation*/
+
+  .col-2{
+    width:12%;
+   
+  }
+
+  /*post */
+  .post {
+    border-bottom: 1px solid #ddd;
+  }
+
+
+  .post-list {
+   
+    color:#05586A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 50px;
+
+  
+  }
+
+  .post img {
+    width: 100%;
+  }
+
+  .post .meta {
+    margin-left: 0;
+    color: #05586A;
+  }
+
+  .post .info {
+    font-size: 1rem;
+    margin-left: 0;
+  
+    color:#05586A;
+  }
+
+
+
+  .list-group{
+    margin-left:20px;
+  }
+
+
+  /*end post*/
+
+  /* comments */
+  .comment-wrapper {
+    margin-left: 0;
+  }
+
+  .comments {
+    color: #00CC18;
+    
+  }
+
+  .comments img {
+    width: 100%;
+  }
+
+  .comment-username {
+    font-size: .75rem;
+    margin-left: 30px;
+  }
+
+  .comment-comment {
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+
+  /* end comments */
+
+  /* homepage */
+  .new-comment {
+    margin-left: 20px;
+  }
+
+  .new-comment-user {
+    font-size: .75rem;
+  }
+
+  .new-comment-textarea {
+    width: 100%;
+    border: 2px solid #333;
+  }
+
+  /*end homepage */
+
+
+
+  .logo{
+      padding-top: 20px;
+      margin:20px;
+      text-align: center;
+
+  }
+
+  .dog{
+    padding-top: 20px;
+    margin:20px;
+    text-align: center;
+  }
+
+  /* text inputs */
+  .form-control{
+    
+    
+  }
+  
+
+
+  
+  header h1 {
+    font-size: 1em;
+    color:white;
+  }
+  
+  img{
+    text-align: center;
+   
+  }
+
+
+  /* this is the post */
+  
+ 
+  
+  
+  /*
+  .post {
+    color:#FD74AA;
+    padding: 1%;
+    margin-bottom: 1%;
+    font-size: 16px;
+    margin-bottom: .5%;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+*/
+  
+ 
+
+
+  
+  
+
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+
+
+
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+    font-size: 16px;
+    margin-bottom: .5%;
+    color:#05586A;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+ 
+    
+    
+  }
+  
+ 
+  
+  .comment .meta {
+    font-size: 16px;
+    margin-bottom: .5%;
+    color:#05586A;
+    
+    
+
+  }
+
+
+
+
+
+
+
+
+
+
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
+
+ 
+
+
+/*----------testing   */
+
+
+
+
