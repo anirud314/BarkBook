@@ -1,6 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+class Post extends Model {
+
+}
+
+
 
 class Post extends Model {
   static upvote(body, models) {
@@ -14,7 +19,6 @@ class Post extends Model {
         },
         attributes: [
           'id',
-          'post_url',
           'title',
           'created_at',
           [
@@ -49,13 +53,6 @@ Post.init(
     title: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    post_url: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isURL: true
-      }
     },
     user_id: {
       type: DataTypes.INTEGER,
