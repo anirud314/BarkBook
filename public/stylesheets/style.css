@@ -1,5 +1,5 @@
 /* RESET? css framework? */
-<<<<<<< HEAD
+
 
 #login-error-msg-holder {
   width: 100%;
@@ -60,20 +60,7 @@
   top: 1px;
 }
 
-button {
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  background-color: #3a3a3a;
-  cursor: pointer;
-  outline: none;
-  white-space: normal;
-  top: 1px;
 
-}
-=======
 * {
     box-sizing: border-box;   
   }
@@ -206,7 +193,7 @@ button {
 
   /* text inputs */
   .form-control{
-    
+    flex-wrap: wrap;
     
   }
   
@@ -324,4 +311,6 @@ button {
 
 
 
->>>>>>> develop
+
+
+

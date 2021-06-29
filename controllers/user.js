@@ -54,7 +54,7 @@ router.put('./:id', (req,res) => {
     })
     .then(dbUserData => {
         if (!dbUserData) {
-            res.status(404).jsonp('lalalalal')
+            res.status(404).jsonp('Not Found')
             return;
         }
         res.json(dbUserData);
