@@ -131,7 +131,7 @@
 
   /* text inputs */
   .form-control{
-    
+    flex-wrap: wrap;
     
   }
   
