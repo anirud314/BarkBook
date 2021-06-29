@@ -13,7 +13,7 @@ const postdata = [
         
     },
     {
-        title: 'Gud Doggo',
+        title: 'Funny Doggo',
         user_id: 3
     }
 ];
