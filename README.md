@@ -9,10 +9,18 @@ Heroku
 Sequalizer 
 Express 
 Handlebars 
-Etc......
+Bootstrap
+Adobe XD
+Google Docs
+Google Slides
+
 
 ## Link to deployed site in Heroku
 link here
+
+## Link to Mock ups
+https://xd.adobe.com/view/07fb6abc-8747-4aeb-9da5-b7d0e12afd0e-52a8/
+
 
 ## Acceptance Criteria MVP
 GIVEN: A Blog social media site
@@ -37,7 +45,10 @@ THEN: I can see the blog but I cannot comment until i make an account
 
 # Notes on the project
 
-## Trica
+## Tricia
+I worked on the Pixel Comps to help us ideate, handlbars and style sheets.
+I also needed to add to work in the api routes, most importantly the home routes to help render the handlebars.
+
 
 ## Andrea
 
