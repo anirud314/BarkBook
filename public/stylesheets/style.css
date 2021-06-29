@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,6 +56,9 @@ table {
 
 
 
+=======
+/* RESET? css framework? */
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
 * {
     box-sizing: border-box;   
   }
@@ -67,12 +71,26 @@ table {
     color: #333;
     font-size: 18px;
     background-color: #1695B1;
+<<<<<<< HEAD
       
+=======
+    
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   .main-col {
     background-color: #fff;
+<<<<<<< HEAD
     align-content: center;
+=======
+    
+    
+  }
+
+
+  .logo-large{
+    text-align: center;
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   .avatar {
@@ -88,7 +106,10 @@ table {
     height:64px;
     background-color: #05586A;
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   /*navigation */
   .bark-title {
     color: #fff;
@@ -100,22 +121,30 @@ table {
     margin:10px;
   }
 
+<<<<<<< HEAD
   .user-button:hover {
+=======
+  .user-button::hover {
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
     color: #fff !important;
   }
 
   /*end navigation*/
 
+<<<<<<< HEAD
   .col-2{
     width:12%;
    
   }
+=======
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
 
   /*post */
   .post {
     border-bottom: 1px solid #ddd;
   }
 
+<<<<<<< HEAD
 
   .post-list {
    
@@ -129,17 +158,25 @@ table {
   
   }
 
+=======
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   .post img {
     width: 100%;
   }
 
   .post .meta {
+<<<<<<< HEAD
     margin-left: 0;
     color: #05586A;
+=======
+    margin-left: 20px;
+    color: #FD74AA;
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   .post .info {
     font-size: 1rem;
+<<<<<<< HEAD
     margin-left: 0;
   
     color:#05586A;
@@ -152,16 +189,26 @@ table {
   }
 
 
+=======
+  }
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   /*end post*/
 
   /* comments */
   .comment-wrapper {
+<<<<<<< HEAD
     margin-left: 0;
+=======
+    margin-left: 20px;
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   .comments {
     color: #00CC18;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   .comments img {
@@ -170,12 +217,18 @@ table {
 
   .comment-username {
     font-size: .75rem;
+<<<<<<< HEAD
     margin-left: 30px;
+=======
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   .comment-comment {
     font-size: 1rem;
+<<<<<<< HEAD
     margin-left: 30px;
+=======
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   }
 
   /* end comments */
@@ -213,7 +266,11 @@ table {
 
   /* text inputs */
   .form-control{
+<<<<<<< HEAD
     
+=======
+    flex-wrap: wrap;
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
     
   }
   
@@ -233,7 +290,20 @@ table {
 
   /* this is the post */
   
+<<<<<<< HEAD
  
+=======
+  .post-list {
+   
+    color:#FD74AA;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+   
+   
+  }
+>>>>>>> 403b88f20fc48dc3262764a451845536135e218d
   
   
   /*

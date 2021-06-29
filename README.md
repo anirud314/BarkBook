@@ -9,10 +9,18 @@ Heroku
 Sequalizer 
 Express 
 Handlebars 
-Etc......
+Bootstrap
+Adobe XD
+Google Docs
+Google Slides
+
 
 ## Link to deployed site in Heroku
 link here
+
+## Link to Mock ups
+https://xd.adobe.com/view/07fb6abc-8747-4aeb-9da5-b7d0e12afd0e-52a8/
+
 
 ## Acceptance Criteria MVP
 GIVEN: A Blog social media site
@@ -33,3 +41,18 @@ THEN: I can read other peoples post and comment
 WHEN: I dont have an account, 
 THEN: I can see the blog but I cannot comment until i make an account
 
+# Screenshots of the project working
+
+# Notes on the project
+
+## Tricia
+I worked on the Pixel Comps to help us ideate, handlbars and style sheets.
+I also needed to add to work in the api routes, most importantly the home routes to help render the handlebars.
+
+
+## Andrea
+
+## Nitin
+
+## Aniruddha
+So I am taking on the api routes and the routing. Based on what I have seen so far this is very similar to the week 14 challenge's routing section, I just have to make sure to change it so that it fits the posts and different things we are trying to route. In order to prepare for this task I planned to use the material I learned from the class project that is due for MVC and use that knowledge for the project as the routing and api routing are similar.
