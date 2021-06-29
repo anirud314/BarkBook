@@ -14,7 +14,6 @@ class Post extends Model {
         },
         attributes: [
           'id',
-          'post_url',
           'title',
           'created_at',
           [
