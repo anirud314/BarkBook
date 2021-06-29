@@ -1,3 +1,6 @@
+const loginErrorMessage = document.getElementById("login-error-msg")
+
+
 async function signupFormHandler(event) {
     event.preventDefault();
 
@@ -18,7 +21,7 @@ async function signupFormHandler(event) {
         if (response.ok) {
             console.log('success');
         } else {
-            alert(response.statusText);
+            loginErrorMessage.style.opacity = 1;
         }
     }
 }
@@ -26,4 +29,4 @@ async function signupFormHandler(event) {
 
 
 
-document.querySelector('.login-form').addEventListener('submit', signupFormHandler);
+document.querySelector('#login').addEventListener('submit', signupFormHandler);
