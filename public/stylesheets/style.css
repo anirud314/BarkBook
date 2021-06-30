@@ -25,6 +25,10 @@
     text-align: center;
   }
 
+  .avatar-wrapper, .avatar-placeholder {
+    min-width: 60px;
+  }
+
   .avatar {
     width: 50px !important;
     height: 50px !important;
