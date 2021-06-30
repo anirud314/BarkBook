@@ -54,5 +54,7 @@ I also needed to add to work in the api routes, most importantly the home routes
 
 ## Nitin
 
+I worked on Login, Logout and Create Account JS and somewhat helped with the handlebars for those as well. I also did the Post.js and some minor work in the post-routes and user-routes as well.
+
 ## Aniruddha
 So I am taking on the api routes and the routing. Based on what I have seen so far this is very similar to the week 14 challenge's routing section, I just have to make sure to change it so that it fits the posts and different things we are trying to route. In order to prepare for this task I planned to use the material I learned from the class project that is due for MVC and use that knowledge for the project as the routing and api routing are similar.
