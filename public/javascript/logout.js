@@ -12,5 +12,12 @@ async function logout() {
     }
 }
 
+let btnClear = document.getElementById("btnClear")
+
+btnClear.addEventListener('click', () => {
+    inputs.forEach(input => input.value = "")
+    return;
+})
+
 // attaching the function to a logout button
 document.querySelector('#logout').addEventListener('click', logout);

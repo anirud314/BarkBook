@@ -1,4 +1,10 @@
 const { destroy } = require("../models/User");
+let btnClear = document.getElementById("btnClear")
+
+btnClear.addEventListener('click', () => {
+    inputs.forEach(input => input.value = "")
+    return;
+})
 
 async function logout() {
     const response = await fetch('/api/users/logout', {
@@ -9,7 +15,7 @@ async function logout() {
     if (response.ok) {
         document.location.replace('/');
     } else {
-        destroy();
+        alert(response.statusText)
     }
 }
 

@@ -1,4 +1,10 @@
 const loginErrorMessage = document.getElementById("login-error-msg")
+let btnClear = document.getElementById("btnClear")
+
+btnClear.addEventListener('click', () => {
+    inputs.forEach(input => input.value = "")
+    return;
+})
 
 
 async function signupFormHandler(event) {
