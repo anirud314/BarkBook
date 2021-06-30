@@ -4,7 +4,7 @@
 <div class="comments">
   {{#each this}}
   <div class="row">
-    <div class="col-1">
+    <div class="col-1 avatar-wrapper">
       <img class="avatar" src="/images/avatar2.png" alt="This is the placeholder for the avatar" title="This is the placeholder for the comment image">
     </div>
     <div class="col-8">
@@ -12,7 +12,7 @@
         <div class="col comment-username">{{user.username}}</div>
       </div>
       <div class="row">
-        <div class="col comment-comment">{{comment}}</div>
+        <div class="col comment-comment">{{comment_text}}</div>
       </div>
       {{body}}
     </div>
