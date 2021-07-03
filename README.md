@@ -1,1 +1,61 @@
-This is some text
+
+# Team Project 2 - TheBarkBook
+
+TheBarkBook is social media blog application for dogs. The atmosphere is fun and lighthearted encouraging pet owners to contribute as represenatives of their canine friends. As such in this parallel universe Dogs can post about their humans and life activities in first person and other users can like, comment on your post and you can respond to them.
+
+## Technologies Used
+MySQL 
+Heroku 
+Sequalizer 
+Express 
+Handlebars 
+Bootstrap
+Adobe XD
+Google Docs
+Google Slides
+
+
+## Link to deployed site in Heroku
+link here
+
+## Link to Mock ups
+https://xd.adobe.com/view/07fb6abc-8747-4aeb-9da5-b7d0e12afd0e-52a8/
+
+
+## Acceptance Criteria MVP
+GIVEN: A Blog social media site
+
+WHEN: I go to the application homepage
+THEN: I am presented with a blog type page 
+
+WHEN: I have I do not yet have an account
+THEN: I will be prompted to create one
+
+WHEN: Once I have access to the blog feed
+THEN: I can type and comment and upload an image
+
+WHEN: I have access to the blog feed.
+THEN: I can read other peoples post and comment
+
+
+WHEN: I dont have an account, 
+THEN: I can see the blog but I cannot comment until i make an account
+
+# Screenshots of the project working
+
+# Notes on the project
+
+## Tricia
+I worked on the Pixel Comps to help us ideate, handlbars and style sheets.
+I also needed to add to work in the api routes, most importantly the home routes to help render the handlebars.
+
+
+## Andrea
+I worked on the api routes and the javascript for the various buttons and handlebars. I also worked on the models for the Comment.js and User.js.
+
+## Nitin
+
+I worked on Login, Logout and Create Account JS and somewhat helped with the handlebars for those as well. I also did the Post.js and some minor work in the post-routes and user-routes as well.
+
+## Aniruddha
+So I am taking on the api routes and the routing. Based on what I have seen so far this is very similar to the week 14 challenge's routing section, I just have to make sure to change it so that it fits the posts and different things we are trying to route. In order to prepare for this task I planned to use the material I learned from the class project that is due for MVC and use that knowledge for the project as the routing and api routing are similar.
