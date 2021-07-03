@@ -30,18 +30,21 @@ router.post("/", (req, res) => {
   if (!req.session.loggedIn) {
     //user not logged in
     res.status(500).send({ error: "No logged in" });
+    return;
+  
   }
 
   //do additional error check
   if (!req.body.post) {
-    error.push("Missing actual post");
+    res.status(500).send({ error: "No post added" });
+    return;
   }
 
   //TODO HANDLE IMAGE
-  if (errors.length > 0) {
-    res.status(500).send({ error: errors });
-    return;
-  }
+  // if (errors.length > 0) {
+  //   res.status(500).send({ error: errors });
+  //   return;
+  // }
 
   //we need the user id req.session.user_id
   //build the post object
