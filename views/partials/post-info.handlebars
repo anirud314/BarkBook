@@ -5,7 +5,7 @@
 <div class="post">
   
   <div class="info">{{user.username}}</div>
-  <img src="/images/image-post-sample.png" alt="Jeff's Selfie"
+  <img src="{{image}}" alt="Jeff's Selfie"
     title="This is Jeff's puppy selfie">
   <div class="info">{{format_date createdAt}}</div> 
   <div class="meta">
@@ -15,7 +15,7 @@
           title="Avatar">
       </div>
       <div class="col-6">
-        {{body}}
+        {{title}}
       </div>
     </div>
     <div class="row">
