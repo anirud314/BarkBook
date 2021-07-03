@@ -51,6 +51,7 @@ I also needed to add to work in the api routes, most importantly the home routes
 
 
 ## Andrea
+I worked on the api routes and the javascript for the various buttons and handlebars. I also worked on the models for the Comment.js and User.js.
 
 ## Nitin
 
