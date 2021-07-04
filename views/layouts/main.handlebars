@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Bark Book</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/4972c56faf.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bark Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/4972c56faf.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="container-fluid p-0">
-      <header class="d-flex m-0">
-      
-         <div class="ms-auto me-2">
-          <a href="/newaccount" > <button type="button" class="btn user-button"   >Make a New Account</button></a>
-         </div>
-          <div class="ms-auto me-2">
-          <a href="/login" > <button type="button" class="btn user-button"   >Login</button></a>
-         </div>
-      </header>
-    </div>
-    <main class="container">
+<div class="wrapper">
+    <header>
+        <nav class="navbar">
+            {{#if loggedIn}}
+            <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create Post</a>
+            <button id="logout" class="button navbar-item">Logout</button>
+            {{else}}
+            <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
+            <a href="/signup" class="button navbar-item">Make a New Account</a>
+            <a href="/login" class="button is-primary navbar-item">Login</a>
+            {{/if}}
+        </nav>
+    </header>
 
-
-
-
-    
-      <div class="row">
-
-
-
-
-       
-        
-        <div class="col main-col">
-
-
-   <div class="row">
-
-         <div class="col main-col logo"> <img src="/images/image-logo-large.png" width="300px" alt="Bark Book Logo"> </div>
-       </div>
-
-
- 
-          {{{ body }}}
-        </div>
-      </div>                  
+    <main>
+        {{{ body }}}
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+
+    <footer class="footer rows pb-2">
+        <div class="row-is-full content has-text-centered">
+            <p>
+                <a href="/" class="foot-item">Home</a>{{#if loggedIn}} |
+                <a href="/dashboard/" class="foot-item">Dashboard</a> |
+                <a href="/dashboard/create/" class="foot-item">Create new post</a>
+                {{else}}
+                | <a href="/login/" class="foot-item">Login</a>
+                {{/if}}
+            </p>
+        </div>
+    </footer>
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>

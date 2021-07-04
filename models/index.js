@@ -1,7 +1,6 @@
-// import all models
 const User = require('./User');
-const Comment = require('./Comment');
 const Post = require('./Post');
+const Comment = require('./Comment');
 
 //create associations
 User.hasMany(Post, {
@@ -29,4 +28,3 @@ Post.hasMany(Comment, {
 });
 
 module.exports = { User, Post, Comment };
-
