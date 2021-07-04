@@ -41,7 +41,24 @@ THEN: I can read other peoples post and comment
 WHEN: I dont have an account, 
 THEN: I can see the blog but I cannot comment until i make an account
 
+# UPDATE: July 4,2021 - 1:24pm pst (ONE OF OUR GROUP MEMBERS WAS ABLE TO FIX THE ISSUE):
+
+One of our team members (Andrea) was able to get help and advice from a relative we were able to fix the bugs plaguing our previous build thanks to her effortsthanks to her efforts. We now have a mostly functional website. While some of the issues still stand, We will go over one key issue that needs to be addressed in this update section
+
 # Screenshots of the project working
+
+## Screenshots
+
+![LocalHostDemo2](./images/BarkBookFixed.gif)
+
+This is the application running 
+
+## Update notes
+
+ Andrea was able to get some support from a knowledgeable family member and was able to go through our code and fix errors we made in syntax and in our routes, our design and handlebar logic. With that we were able to get to a point where we are now able to login and logout, register a user, post comments, post posts. The only error/ issues that remain that we don't have time to fix are styling issues as well as an issue where we cant get the unique pictures whe apply to each post. The solution to this was something we went over in class, but it was too late in the sprint to implement. 
+
+
+# Screenshots of the project 
 
 ## Notes on Local Host demo
 
@@ -51,7 +68,7 @@ In the local host we were working on trying to iron out things, we finally got o
 
 ## Notes on Heroku Demo
 
-![myDemo1](./images/TheBarkBookHeroku.gif)
+![HerokuDemo](./images/TheBarkBookHeroku.gif)
 
 In the heroku app there is no seed data stored, however we can showcase the page routing present as well as what we were able to get accomplished with a close to standard final product. We will discuss the project in further detail in the issue's section as well as our individual notes in the comments section.
 
