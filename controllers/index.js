@@ -1,23 +1,29 @@
+// An index file to gather the routes to export to the server
+// Dependencies
+// Server connection
 const router = require('express').Router();
 
+// API routes folder
 const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
-//const user = require('./user.js');
 
+// Homepage routes
+const homeRoutes = require('./home_routes.js');
 
-router.use('/', homeRoutes);
+// Dashboard Routes
+const dashboardRoutes = require('./dashboard_routes.js');
+
+// Define the path for the server for the API routes
 router.use('/api', apiRoutes);
 
-router.get('/login', (req, res) => {
-    res.render('login');
+// Define the path for the home page
+router.use('/', homeRoutes);
+
+// Define the path for the dashboard
+router.use('/dashboard', dashboardRoutes);
+
+// Define a catch-all route for any resource that doesn't exist
+router.use((req, res) => {
+  res.status(404).end();
 });
-  
-router.get('/newaccount',(req,res) => {
-    res.render('newaccount');
-})
-  
-router.get('/singlepost',(req,res) => {
-    res.render('singlepost');
-})
 
 module.exports = router;

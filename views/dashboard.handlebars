@@ -1,0 +1,27 @@
+<div class="column">
+    <div class="col main-col logo">
+        <img src="/images/image-logo-large.png" width="300px" alt="Bark Book Logo">
+    </div>
+
+    <div class="col main-col dog">
+        <img src="/images/image-dog2.png" width="200px" alt="Doggy">
+    </div>
+
+</div>
+
+<div class="mb-5 pt-3">
+    <h2 class="dash-title">Dashboard: Your Posts</h2>
+    {{#if posts.length}}
+</div>
+
+{{#each posts as |post|}}
+{{> post_info post}}
+
+<a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 not_look_like_btn">edit post</button></a>
+</div>
+{{/each}}
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">You do not currently have any posts...</h6>
+
+{{/if}}
